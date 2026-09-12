@@ -1,0 +1,25 @@
+# LangChain Agent with Ollama - Dependencies
+
+# Core
+langchain>=0.1.0
+langchain-ollama>=0.1.0
+langchain-community>=0.0.10
+langchain-text-splitters>=0.0.1
+langgraph>=0.0.20
+langchain-mcp-adapters>=0.1.0
+
+# Vector Store
+chromadb>=0.4.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Web Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# YAML
+pyyaml>=6.0
+
+# Optional: YouTube Download
+# yt-dlp>=2024.1.0
