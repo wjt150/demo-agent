@@ -1,0 +1,45 @@
+permissions:
+  file_system:
+    description: 文件系统权限
+    tools:
+    - read
+    - write
+    - edit
+  network:
+    description: 网络访问权限
+    tools:
+    - web_search
+    - fetch_page
+  rag:
+    description: RAG检索权限
+    tools:
+    - valorant_rag
+  weather:
+    description: 天气服务权限
+    tools:
+    - get_weather
+roles:
+  admin:
+    permissions:
+    - network
+    - weather
+    - rag
+    - file_system
+  readonly:
+    permissions:
+    - rag
+  user:
+    permissions:
+    - network
+    - weather
+    - rag
+skill_permissions:
+  valorant_rag:
+    required:
+    - rag
+  weather:
+    required:
+    - weather
+  web_search:
+    required:
+    - network
